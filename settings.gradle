@@ -1,0 +1,4 @@
+include ':app', ':easeui'
+include ':PullToRefrsh-library'
+include ':examples'
+include ':easeUISimpleDemo'

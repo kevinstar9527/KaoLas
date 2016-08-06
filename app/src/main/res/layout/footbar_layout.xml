@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#EFEFEF"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/home_rg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/home_rd_discover"
+            style="@style/home_radio_button"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_footbar_discover"
+            android:text="@string/home_rb_discover"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <RadioButton
+            android:id="@+id/home_rd_mine"
+            style="@style/home_radio_button"
+            android:drawableTop="@drawable/selector_footbar_mine"
+            android:text="@string/home_rb_mine"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <RadioButton
+            android:id="@+id/home_rd_download"
+            style="@style/home_radio_button"
+            android:drawableTop="@drawable/selector_footbar_download"
+            android:text="@string/home_rb_download"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>

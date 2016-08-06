@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/radio_item_content_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/radio_item_content_rl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_rank_drawable_bg">
+
+        <TextView
+            android:id="@+id/radio_item_bunname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:maxWidth="150dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="说给你听"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/radio_item_play_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_recommend_play_normal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/radio_item_rname_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_item_content_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="央广中国之声"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+</RelativeLayout>

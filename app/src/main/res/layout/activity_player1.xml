@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--最底层的背景图片-->
+    <ImageView
+        android:id="@+id/player1_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/player1_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/player1_top_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/btn_back_white_normal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/player1_top_titleimg_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:background="@color/public_red"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/player1_top_titlename_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:text="澎湃新闻"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/public_gray"
+                    android:text="-专辑-"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/player1_top_book_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_chat_add_default"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/white"
+            android:text="订阅"/>
+
+
+    </RelativeLayout>
+
+    <!--最下面的五个按钮-->
+    <LinearLayout
+        android:id="@+id/player1_botton_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/player1_botton_good_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_player_good_normals"/>
+        <ImageView
+            android:id="@+id/player1_botton_download_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_download_normals"/>
+        <ImageView
+            android:id="@+id/player1_botton_comment_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/comments_normal"/>
+        <ImageView
+            android:id="@+id/player1_botton_share_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_share_normals"/>
+        <ImageView
+            android:id="@+id/player1_botton_more_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_live_more_normals"/>
+
+    </LinearLayout>
+
+
+
+
+    <!--中间的内容  夹在中间填满屏幕-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/player1_botton_ll"
+        android:layout_below="@+id/player1_top_rl"
+        android:layout_margin="40dp"
+        android:background="#fff000">
+
+        <!--折叠效果的控件-->
+
+        <!--具体播放的内容-->
+        <include layout="@layout/layout_play"/>
+
+
+        <!--<RelativeLayout
+            android:id="@+id/player1_content_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>-->
+    </LinearLayout>
+</RelativeLayout>

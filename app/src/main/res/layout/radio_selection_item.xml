@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <View
+        android:id="@+id/item_line"
+        style="@style/horizontal_line"/>
+
+    <ImageView
+        android:id="@+id/radio_item_tiv"
+        android:layout_below="@+id/item_line"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/radio_item_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radio_item_tiv"
+        android:layout_alignBottom="@+id/radio_item_tiv"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_recommend_play_normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/item_line"
+        android:layout_toLeftOf="@+id/radio_selection_skip"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/radio_item_tiv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/radio_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="犀利男神.fm"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/radio_item_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="考拉FM重磅推出王牌情感自媒体联盟，“史上最牛”主播阵容：情感奶爸陆琪、恋爱教父陈保才、著名节目主持人金山、文艺青年张涛、人气星座专家小王子等！每天，他们热辣点评爆点频频，速来围观！"
+            android:textColor="@color/public_gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/radio_item_content_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/radio_item_listen_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/search_listen"
+                android:drawablePadding="5dp"
+                android:text="583"
+                android:textColor="@color/public_gray"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/radio_item_follow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/search_subscribe"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="40dp"
+                android:text="417"
+                android:textColor="@color/public_gray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/radio_selection_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/arrow_right" />
+
+</RelativeLayout>

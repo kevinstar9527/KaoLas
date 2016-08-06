@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--IndexView的自定义属性-->
+    <declare-styleable name="index_view">
+        <attr name="count" format="integer"/><!--几个圆-->
+        <attr name="radius" format="float"/><!--半径-->
+        <attr name="defaluColor" format="color|reference"/><!---->
+        <attr name="selectedColor" format="color|reference"/>
+        <attr name="circlePadding" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineEditeText">
+        <attr name="lineColorEt" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="line_view">
+        <attr name="linecount" format="integer"/> <!--个数-->
+        <attr name="linedefaluColor" format="color|reference"/><!--默认颜色-->
+        <attr name="lineselectedColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

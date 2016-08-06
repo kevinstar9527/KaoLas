@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">KaoLa</string>
+
+    <string name="upgrade_title">版本提示</string>
+    <string name="upgrade_download">下载</string>
+    <string name="upgrade_cancle">取消</string>
+    <string name="home_rb_discover">发现</string>
+    <string name="home_rb_mine">我的</string>
+    <string name="home_rb_download">离线</string>
+    <string name="home_rb_search_hint">人、编辑、节目</string>
+    <string name="share">分享</string>
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+
+</resources>

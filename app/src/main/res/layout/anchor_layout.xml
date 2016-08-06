@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <kaola.zhanchengguo.com.kaola.other.widget.AnchorItem
+        android:id="@+id/anchor_layout_ani1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </kaola.zhanchengguo.com.kaola.other.widget.AnchorItem>
+
+    <kaola.zhanchengguo.com.kaola.other.widget.AnchorItem
+        android:id="@+id/anchor_layout_ani2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+    </kaola.zhanchengguo.com.kaola.other.widget.AnchorItem>
+
+    <kaola.zhanchengguo.com.kaola.other.widget.AnchorItem
+        android:id="@+id/anchor_layout_ani3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </kaola.zhanchengguo.com.kaola.other.widget.AnchorItem>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <View
+        android:id="@+id/item_line"
+        style="@style/horizontal_line"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/like_item_tiv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/item_line"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/like_item_tiv"
+        android:layout_alignBottom="@+id/like_item_tiv"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_recommend_play_normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_line"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/like_item_tiv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/like_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三国志41_蜀书11_6费诗"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/like_item_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="三国志(原文朗读)"
+            android:textColor="@color/public_gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/like_item_content_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/like_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐理由 : "
+                android:textColor="@color/public_gray"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/like_item_reason_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试试新风格"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/public_gray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/arrow_right" />
+
+</RelativeLayout>

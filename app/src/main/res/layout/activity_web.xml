@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:src="@drawable/btn_back_normal"/>
+        <TextView
+            android:id="@+id/web_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="找不到网页"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_web_share_press_refresh"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:src="@drawable/icon_now_listening_red_06"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/web_pb"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/layer_progress"/>
+    <WebView
+        android:id="@+id/web_content_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

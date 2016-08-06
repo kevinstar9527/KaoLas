@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/special_panel_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="猜你喜欢"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/special_panel_title_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/discover_gul_play"/>
+
+        <TextView
+            android:id="@+id/special_panel_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/discover_refresh_pressed"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="换一批"
+            android:textSize="12sp"
+            android:textColor="@color/public_gray"/>
+        <View
+            style="@style/horizontal_line"
+            android:layout_below="@+id/special_panel_title_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>
+
+</merge>

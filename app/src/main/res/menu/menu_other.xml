@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_shake"
+        android:icon="@drawable/auto_help"
+        android:title="摇一摇"></item>
+    <item
+    android:id="@+id/menu_camera"
+    android:icon="@drawable/ic_auchor_photo_press"
+    android:title="照相机"></item>
+
+    <item
+        android:id="@+id/menu_qr_code"
+        android:icon="@drawable/ic_auchor_photo_press"
+        android:title="扫一扫"></item>
+    <item
+        android:id="@+id/menu_secret"
+        android:icon="@drawable/ic_auchor_photo_press"
+        android:title="加密"></item>
+</menu>
